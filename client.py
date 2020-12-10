@@ -5,7 +5,7 @@ import json
 
 mqttBroker = "test.mosquitto.org" 
 
-client = mqtt.Client("Teste")
+client = mqtt.Client("Cliente")
 client.connect(mqttBroker) 
 
 while True:
@@ -32,5 +32,5 @@ while True:
 
     # Enviando para o tópico 
     client.publish("c115/projeto/vaga", json.dumps(obj))
-    print("Just published " + str(randId) + " to topic TEMPERATURE") # Mostrando no console
+    print("Mudança na vaga: " + str(randId)) # Mostrando no console qual vaga foi alterada
     time.sleep(2) # Tempo para alterar
