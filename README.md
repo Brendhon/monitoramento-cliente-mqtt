@@ -16,7 +16,7 @@ Projeto realizado para colocar em prática os conhecimentos adquiridos na discip
  
 #### Clone
 ```
-git clone https://github.com/Brendhon/mqttC115.git
+git clone https://github.com/Brendhon/monitoramento-cliente-mqtt.git
 ```
 #### Comandos
 Na pasta raiz
