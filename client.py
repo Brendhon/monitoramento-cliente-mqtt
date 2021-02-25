@@ -36,6 +36,6 @@ while True:
 
     # Enviando para o tópico 
     client.publish("c115/projeto/vaga", json.dumps(obj))
-    print("Mudança na vaga: " + str(randId + 1)) # Mostrando no console qual vaga foi alterada
+    print("Mudança na vaga: " + str(randId + 1) + " - " + str(obj['status'])) # Mostrando no console qual vaga foi alterada
     time.sleep(10) # Tempo para alterar
     
